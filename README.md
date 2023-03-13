@@ -8,7 +8,7 @@ https://marcpuerto.github.io/Exercices/
 
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/GsDujyU.png)
+![App Screenshot](https://i.imgur.com/vjHJSY6.png)
 
 
 ## Authors
