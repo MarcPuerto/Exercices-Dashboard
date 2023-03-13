@@ -396,3 +396,77 @@ input[type="checkbox"]:checked+label::after {
 .user-box:last-child {
     border-bottom: transparent;
 }
+
+
+/* RESPONSIVE */
+
+@media (max-width: 740px) {
+    body {
+       grid-template-columns: 1fr;
+    }
+ 
+    .sidebar {
+       position: fixed;
+       z-index: 2;
+       height: 100%;
+       width: 280px;
+       transition: transform 350ms ease-in-out;
+       transform: translateX(-100%);
+    }
+ 
+ }
+
+
+ 
+@media (max-width: 580px) {
+    header {
+       grid-template-columns: 1fr 1fr;
+    }
+ 
+    .icons {
+       display: none;
+    }
+ 
+    .user {
+       justify-content: flex-end;
+    }
+ }
+
+
+ @media (max-width: 1080px) {
+    .info-card {
+       grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+
+ @media (max-width: 660px), (min-width: 720px) and (max-width: 920px) {
+    .content-box{
+       grid-column: 1 / -1;
+       border-radius: 0.5rem;
+       margin-top: 1.5rem;
+       grid-template-columns: 1fr;
+    }
+
+    .dashboard-container{
+        grid-column: 1 / -1;
+        grid-column-start: 1;
+    }
+
+    .personal-box{
+        justify-content: flex-start;
+    }
+
+    .title-box{
+        display: none;
+    }
+
+    .state-card-box{
+        column-gap: 1.5rem;
+        margin: 1rem 0;
+        height: auto;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+ }
